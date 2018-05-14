@@ -3,7 +3,7 @@ var app = express();
 
 require('./middleware')(app);
 
-require('./passport');
+require('./passport')();
 require('./routes')(app);
 
 app.listen(3000, () => {
