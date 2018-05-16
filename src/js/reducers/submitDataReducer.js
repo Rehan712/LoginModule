@@ -11,6 +11,8 @@ export default function submitDataReducer(state = initial, action) {
 			return { ...state, name: action.payload };
 		case types.ON_PASSWORD_CHANGE:
 			return { ...state, password: action.payload };
+		case types.RESET_STATE:
+			return { ...state, name: '', password: '' };
 		default:
 			return state;
 	}

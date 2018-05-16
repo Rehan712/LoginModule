@@ -64,3 +64,8 @@ export function submitDataFail(error) {
 		payload: error
 	};
 }
+export function resetState() {
+	return {
+		type: types.RESET_STATE
+	};
+}
