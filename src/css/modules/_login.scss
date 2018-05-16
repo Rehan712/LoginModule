@@ -7,8 +7,6 @@
 	align-items: center;
 	height: 400px;
 	.innerDiv {
-		//height: 200px;
-		//border: 1px solid red;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -23,7 +21,6 @@
 		}
 		.textPassword {
 			padding: 20px;
-			//width: 400px;
 			display: flex;
 			justify-content: center;
 			align-items: center;

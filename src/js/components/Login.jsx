@@ -52,7 +52,8 @@ class Login extends React.Component {
 						<div className="textButton">
 							<Button
 								color="secondary"
-								onClick={() => {
+								onClick={e => {
+									e.preventDefault();
 									submitData(inputData);
 									resetState();
 								}}

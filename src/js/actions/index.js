@@ -69,3 +69,9 @@ export function resetState() {
 		type: types.RESET_STATE
 	};
 }
+
+export function signOut() {
+	return {
+		type: types.SIGN_OUT
+	};
+}

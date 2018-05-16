@@ -11,6 +11,7 @@ import Students from './Students';
 
 class App extends Component {
   render() {
+    console.log('these are the props in app', this.props);
     return (
       <div className="app">
         <AppBar position="static">
@@ -26,7 +27,12 @@ class App extends Component {
         </AppBar>
         <Switch>
           <Route exact path="/login" component={Login} />
-          <Route path="/student" component={Students} />
+          <Route
+            path="/student"
+            render={routeProps => {
+              return <Students history={routeProps.history} />;
+            }}
+          />
         </Switch>
       </div>
     );
